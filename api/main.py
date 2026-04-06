@@ -53,4 +53,4 @@ def obtener_clientes():
         "clientes": resultado.data
     }
 
-# actualización forzada
+# Cambio para forzar sincronizacion final
