@@ -52,3 +52,5 @@ def obtener_clientes():
         "total": len(resultado.data),
         "clientes": resultado.data
     }
+
+# actualización forzada
