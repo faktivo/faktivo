@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de - faktivo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- NAVEGACION -->
+    <nav class="navbar">
+        <div class="nav-brand">Mi Primera Web</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="clientes.html" class="nav-link">Clientes</a>
+            <a href="acerca.html" class="nav-link active">Acerca de</a>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container">
+        <h1>Acerca de Este Proyecto</h1>
+        <p class="page-subtitle">Informacion sobre la tecnologia utilizada y el proposito del proyecto.</p>
+
+        <section class="about-grid">
+            <div class="about-card">
+                <h2>Que es este proyecto?</h2>
+                <p>
+                    Esta es mi primera pagina web en produccion. Es un proyecto de aprendizaje
+                    para entender como funcionan las tecnologias web modernas: frontend, backend,
+                    base de datos y deployment.
+                </p>
+                <p>
+                    La pagina permite gestionar una lista de clientes, con datos guardados
+                    en una base de datos real (Supabase/PostgreSQL).
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h2>Stack Tecnologico</h2>
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <strong>Frontend:</strong> HTML, CSS, JavaScript
+                    </div>
+                    <div class="tech-item">
+                        <strong>Base de Datos:</strong> Supabase (PostgreSQL)
+                    </div>
+                    <div class="tech-item">
+                        <strong>Hosting Frontend:</strong> Vercel
+                    </div>
+                    <div class="tech-item">
+                        <strong>Hosting Backend:</strong> Railway
+                    </div>
+                    <div class="tech-item">
+                        <strong>Control de Versiones:</strong> Git + GitHub
+                    </div>
+                    <div class="tech-item">
+                        <strong>Asistente IA:</strong> Claude Code
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-card">
+                <h2>Como Funciona el Deploy?</h2>
+                <div class="deploy-flow">
+                    <div class="flow-step">
+                        <span class="step-number">1</span>
+                        <span>Edito el codigo en VS Code</span>
+                    </div>
+                    <div class="flow-arrow">↓</div>
+                    <div class="flow-step">
+                        <span class="step-number">2</span>
+                        <span>git add + git commit</span>
+                    </div>
+                    <div class="flow-arrow">↓</div>
+                    <div class="flow-step">
+                        <span class="step-number">3</span>
+                        <span>git push (sube a GitHub)</span>
+                    </div>
+                    <div class="flow-arrow">↓</div>
+                    <div class="flow-step">
+                        <span class="step-number">4</span>
+                        <span>Vercel detecta el push y despliega automaticamente</span>
+                    </div>
+                    <div class="flow-arrow">↓</div>
+                    <div class="flow-step">
+                        <span class="step-number">5</span>
+                        <span>En 30 segundos esta en produccion!</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-card">
+                <h2>Recursos para Aprender</h2>
+                <ul class="resource-list">
+                    <li><a href="https://sqlbolt.com/" target="_blank">SQLBolt</a> — Aprender SQL interactivo</li>
+                    <li><a href="https://react.dev/learn" target="_blank">React.dev</a> — Tutorial oficial de React</li>
+                    <li><a href="https://fastapi.tiangolo.com/tutorial/" target="_blank">FastAPI</a> — Tutorial de backend con Python</li>
+                    <li><a href="https://learngitbranching.js.org/?locale=es_AR" target="_blank">Learn Git</a> — Git interactivo</li>
+                    <li><a href="https://supabase.com/docs" target="_blank">Supabase Docs</a> — Documentacion de la BD</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>Hecho por Cesar — 2026</p>
+    </footer>
+</body>
+</html>
