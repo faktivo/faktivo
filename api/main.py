@@ -42,10 +42,13 @@ def obtener_clientes():
     }
 
 
-@app.get("/api/clientes/{cliente_id}")
-def obtener_cliente(cliente_id: int):
-    """Trae un cliente especifico por su ID."""
-    resultado = db.table("clientes").select("*").eq("id", cliente_id).execute()
-    if not resultado.data:
-        return {"error": "Cliente no encontrado"}
-    return resultado.data[0]
+@app.get("/api/clientes")
+def obtener_clientes():
+    """Trae todos los clientes de la base de datos."""
+    # Esta es la línea que debes actualizar (Línea 8 aprox.)
+    resultado = db.table("clientes").select("*").order("id", ascending=True).execute()
+    
+    return {
+        "total": len(resultado.data),
+        "clientes": resultado.data
+    }
